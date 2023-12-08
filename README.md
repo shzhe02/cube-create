@@ -13,3 +13,7 @@ Installed CLI programs:
 Defaults:
 - Output toolbox image is cube:39
 - Temporary toolbox container name for creating the image is cube-create
+
+Scripts:
+- cube-create: The acutal script
+- cube-reset: Stops and deletes the cube container
