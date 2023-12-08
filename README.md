@@ -1,7 +1,5 @@
 # Cube
 
----
-
 A bash script to create a development environment in [toolbox/toolbx](https://containertoolbx.org/) based off the Fedora toolbox image.
 
 Designed for use on a Fedora Silverblue/Kinoite system, but any system with toolbox should work (untested).
