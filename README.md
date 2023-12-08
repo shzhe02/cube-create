@@ -4,6 +4,10 @@ A bash script to create a development environment in [toolbox/toolbx](https://co
 
 Designed for use on a Fedora Silverblue/Kinoite system, but any system with toolbox should work (untested).
 
+Dependencies:
+- toolbox
+- podman
+
 Installed CLI programs:
 - [Helix Editor](https://helix-editor.com/)
     - with LSPs for HTML, JS, TS
