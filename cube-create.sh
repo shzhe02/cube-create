@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TMP_NAME=cube-create
-VER=39
+VER=40
 OUTPUT_NAME=cube
 
 # Creating Toolbox
@@ -20,7 +20,7 @@ toolbox run -c $TMP_NAME sudo dnf install go helix clang-tools-extra nodejs ninj
 echo [INFO] Updating npm...
 toolbox run -c $TMP_NAME sudo npm install -g npm@latest > /dev/null 2>&1
 echo [INFO] Installing npm packages...
-toolbox run -c $TMP_NAME sudo npm install -g typescript typescript-language-server vscode-langservers-extracted yarn > /dev/null 2>&1
+toolbox run -c $TMP_NAME sudo npm install -g typescript typescript-language-server vscode-langservers-extracted yarn svelte-language-server > /dev/null 2>&1
 echo [INFO] Installing Flutter...
 toolbox run -c $TMP_NAME curl -O https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.16.3-stable.tar.xz > /dev/null 2>&1
 toolbox run -c $TMP_NAME tar xf ./flutter_linux_3.16.3-stable.tar.xz
