@@ -26,6 +26,7 @@ toolbox run -c $TMP_NAME curl -O https://storage.googleapis.com/flutter_infra_re
 toolbox run -c $TMP_NAME tar xf ./flutter_linux_3.16.3-stable.tar.xz
 toolbox run -c $TMP_NAME sudo cp flutter /usr/local/flutter -r
 toolbox run -c $TMP_NAME sudo chown -R $USER:$USER /usr/local/flutter
+toolbox run -c $TMP_NAME flutter upgrade
 echo [INFO] Cleaning up Flutter install...
 toolbox run -c $TMP_NAME sudo rm flutter_linux_3.16.3-stable.tar.xz
 toolbox run -c $TMP_NAME sudo rm flutter -r
